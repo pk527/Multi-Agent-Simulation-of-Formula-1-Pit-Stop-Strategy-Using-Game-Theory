@@ -1,6 +1,6 @@
 # 🌟 Multi-Agent Simulation of Pit Stop Strategy Using Game Theory
 
-Welcome to the official repository of **Multi-Agent Simulation of Pit Stop Strategy Using Game Theory**, where **F1 racing meets intelligent decision-making**. This project models pit stop strategies of Formula 1 teams like Ferrari and McLaren using **Bayesian game theory** and **agent-based simulation**, delivering an **interactive HTML dashboard** packed with visual insights and analytical tools.
+Welcome to the official repository of **Multi-Agent Simulation of Pit Stop Strategy Using Game Theory**, where **F1 racing meets intelligent decision-making**. This project models pit stop strategies of Formula 1 teams like Ferrari and McLaren using **Bayesian game theory** and **agent-based simulation**, delivering an **interactive python  dashboard in HTML File** packed with visual insights and analytical tools.
 
 > 💡 *"In F1, milliseconds matter. Pit stop decisions can win or lose races. This project simulates those decisions under uncertainty using game theory."*
 
