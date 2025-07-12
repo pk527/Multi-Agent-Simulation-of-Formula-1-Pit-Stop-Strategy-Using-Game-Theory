@@ -6,6 +6,19 @@ Welcome to the official repository of **Multi-Agent Simulation of Pit Stop Strat
 
 ---
 
+## 🏁 Race Context: 2024 Spanish Grand Prix
+
+This simulation is grounded in real-world data from the **2024 Spanish Grand Prix**, making the analysis both relevant and realistic. Using data pulled from the **FastF1 API**, the model integrates:
+
+* Actual lap times
+* Sector performance metrics
+* Tire compound usage
+* Pit stop events
+
+📡 **FastF1** (a Python package for accessing F1 telemetry and timing data) allowed us to replicate timing and strategy dynamics for the 2024 Circuit de Barcelona-Catalunya race, providing a factual backbone to all strategic simulations.
+
+---
+
 ## 🚀 Project Overview
 
 This repository simulates the high-stakes world of Formula 1 racing — but from a **strategic lens**. Each team acts as an autonomous agent making calculated pit stop decisions in a multi-agent environment. Unlike traditional simulations, this project focuses on **how strategies interact**, not just performance in isolation.
@@ -15,6 +28,7 @@ You’ll explore:
 * Strategic behavior of **Ferrari and McLaren** using **Bayesian reasoning**.
 * Outcomes shaped by tire wear, timing, rival moves, and traffic.
 * Real-time visualization and comparison of **36+ strategy combinations**.
+* Strategy impact modeled on **Spanish GP race conditions**.
 
 The output is a **dynamic HTML dashboard** that turns theory into action, helping users simulate, explore, and make sense of racing’s most important decision: *When do you pit?*
 
@@ -101,14 +115,15 @@ The dashboard is a feature-rich HTML interface designed to guide users through s
 
 ## 🔢 Technical Architecture
 
-| Module             | Purpose                                        |
-| ------------------ | ---------------------------------------------- |
-| `agents.py`        | Implements rational agents using game theory   |
-| `simulator.py`     | Manages race logic, lap counts, time evolution |
-| `payoff_matrix.py` | Calculates outcomes for strategy pairs         |
-| `dashboard.html`   | Renders all analytics visually in browser      |
+| Module                  | Purpose                                        |
+| ----------------------- | ---------------------------------------------- |
+| `agents.py`             | Implements rational agents using game theory   |
+| `simulator.py`          | Manages race logic, lap counts, time evolution |
+| `payoff_matrix.py`      | Calculates outcomes for strategy pairs         |
+| `dashboard.html`        | Renders all analytics visually in browser      |
+| `fastf1_data_loader.py` | Pulls lap/pit/tire data from 2024 Spanish GP   |
 
-> Fully written in **Python**, with **HTML + JavaScript** visuals. No extra backend required.
+> Fully written in **Python**, with **HTML + JavaScript** visuals. Uses **FastF1 API** for real telemetry-based modeling.
 
 ---
 
@@ -174,6 +189,8 @@ This isn't just a simulator — it's a classroom on wheels. Concepts used:
 * **Regret Minimization**: Avoids high-risk low-reward paths.
 * **Matrix Games**: Visualizes decisions in payoff tables.
 
+`
+
 ---
 
 ## 🌐 Use Cases
@@ -187,6 +204,8 @@ This project is ideal for:
 
 ---
 
+
+
 ## 💡 Roadmap: What’s Next?
 
 * 🔄 Add **Monte Carlo simulation** to simulate 1000s of races
@@ -195,6 +214,4 @@ This project is ideal for:
 * 📄 Export simulation results to CSV or JSON for research
 
 ---
-
-
 
